@@ -61,11 +61,15 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item custom-pos">
-              <a class="nav-link custom-btn shadow text-white " href="#">Sign in</a>
+           
+              <button type="button" class="  btn  custom-btn shadow text-white" data-toggle="modal" data-target="#myModal2">
+                Sign in
+              </button>
             </li>
           
           </ul>
         </div>
+
       </div>
     </nav>
 
@@ -94,7 +98,7 @@
                     <label for="validationCustom01 ">Email</label>
                     <input type="email" class="form-control" id="validationCustom01" name="mail" placeholder="Enter Email" value="" >
                   </div>
-                  <div class="col-md-8 mb-3 ">
+                  <div class="col-md-8 mb-3 p-0 ">
                     <label for="validationCustom01 ">Subject</label>
                     <input type="text" class="form-control" id="validationCustom01" name="subject" placeholder="Enter Subject" value="" >
                     <div class="valid-feedback custom-error">
@@ -109,7 +113,7 @@
                     <div class="custom-file mb-3">
                      
                       <input type="file" class="custom-file-input" id="validatedCustomFile" >
-                      <label class="custom-file-label" for="validatedCustomFile"></label>
+                      <label class="custom-file-label" for="validatedCustomFile"><img src="vendor/img/upload-cloud.svg" alt="" height="40px"></label>
                       <div class="invalid-feedback">Example invalid custom file feedback</div>
                     </div>
                    
@@ -343,15 +347,16 @@
         <div class="row align-items-center">
           <div class="col-sm-6 custom-mb security-img">
             <img src="vendor/img/blob.png" />
-            <div class="content">
-              <h4>We Assure <br>Your Anonymity</h4>
-              <p>Our team is highly qualified and experienced. <br>
-                They keep your data confidential and provide <br>
-                quality work. That’s why thousands of students<br>trust us.
-                </p>
-            </div>
+           
           </div>
           <div class="col-sm-6 custom-font">
+            <div class="content">
+              <h4>We Assure <br>Your Anonymity</h4>
+              <!-- <p>Our team is highly qualified and experienced. <br>
+                They keep your data confidential and provide <br>
+                quality work. That’s why thousands of students<br>trust us.
+                </p> -->
+            </div>
             <div class="row text-white  security-set p-5">
               <div class="col-sm-2 col-2  mt-5">
                 <img src="vendor/img/integrity.png" class="integrity" width="60px" height="60px" />
@@ -414,9 +419,10 @@
                 <li class="list-group-item">Terms Of Use</li>
                 <li class="social-img list-group-item">
                   <img src="vendor/img/facebook.svg"> 
-                  <img src="vendor/img/insta.svg"> 
+                  <img src="vendor/img/gmail.svg">
+                  <img src="vendor/img/instagram.svg"> 
                   <img src="vendor/img/tweet.svg"> 
-                  <img src="vendor/img/youtube.svg"> 
+                  
                 </li>
               </ul>
             </div>
@@ -425,6 +431,23 @@
         </div>
       </section>
     </footer>
+    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           
+          </div>
+  
+          <div class="modal-body">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+          </div>
+  
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div>
     <!-- testimonial End-->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
