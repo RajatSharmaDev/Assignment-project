@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: justify;
 }
 .scrolled {
   background: #545dad;
@@ -36,12 +37,13 @@ body {
 .custom-btn {
   background-color: #545dad;
   color: #fff;
+  font-weight: bold;
 }
 
 .navbar-nav .nav-item:last-child h6 {
   padding: 7px 20px 7px 20px !important;
 }
-.scrolled .navbar-nav .nav-item:last-child a {
+.scrolled .custom-btn {
   background-color: #ffffff;
   color: #545dad !important;
   font-weight: bold;
@@ -197,7 +199,7 @@ body {
   right: 8%;
 }
 .banner-bottom {
-  background-image: url("../../img/banner-bottom.svg");
+  background-image: url("../../img/banner-bottom.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -212,16 +214,16 @@ body {
 .security-img {
   position: relative;
 }
-.security-img .content {
+.content {
   position: absolute;
-  top: 25%;
+  top: 0;
   width: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-62%, -200%);
 }
 
-.security-img h4 {
-  font-size: 48px;
+.content h4 {
+  font-size: 50px;
   font-weight: bold;
   top: 0;
   margin-bottom: 15px;
@@ -314,8 +316,8 @@ body {
   top: -2%;
 }
 .form-control:focus {
-  border-color: #fddadb;
-  box-shadow: 0 0 0 0rem #fddadb;
+  border-color: #545dad;
+  box-shadow: 0 0 0 0rem #545dad;
 }
 .btn-custom-primary {
   background-color: #d88a8c !important;
@@ -391,10 +393,13 @@ body {
 }
 .back-card {
   background-image: url("../../img/blog-1.svg");
-  height: 350px;
+  height: 250px;
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .about-review {
@@ -500,18 +505,68 @@ body {
 }
 .custom-file-label {
   border: none !important;
+  background-color: transparent;
+  padding: 0 !important;
 }
 .custom-file-input:lang(en) ~ .custom-file-label::after {
-  content: "Browse";
+  content: "";
+
   color: white;
   width: 100%;
-  padding: 10px 0px 33px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .custom-file-label::after {
-  background-color: #545dad !important;
+  background-color: transparent !important;
   border-left: none !important;
 }
 .error {
   color: red;
+}
+
+/* modal */
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  max-width: 100% !important;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+.modal.right.fade .modal-dialog {
+  right: -100%;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: transparent;
+}
+.modal.right.fade.show .modal-dialog {
+  right: 0;
+}
+.close {
+  font-size: 50px;
 }
