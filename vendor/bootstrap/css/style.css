@@ -471,6 +471,10 @@ body {
 }
 .heght-set p {
   color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: justify;
+  padding-right: 40px;
 }
 .blog {
   line-height: 34px;
