@@ -1,29 +1,4 @@
-// // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (function () {
-//   "use strict";
-//   window.addEventListener(
-//     "load",
-//     function () {
-//       // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//       var forms = document.getElementsByClassName("needs-validation");
-//       // Loop over them and prevent submission
-//       var validation = Array.prototype.filter.call(forms, function (form) {
-//         form.addEventListener(
-//           "submit",
-//           function (event) {
-//             if (form.checkValidity() === false) {
-//               event.preventDefault();
-//               event.stopPropagation();
-//             }
-//             form.classList.add("was-validated");
-//           },
-//           false
-//         );
-//       });
-//     },
-//     false
-//   );
-// })();
+
 
 gsap.from(".banner-text h3", {duration: 1, x: -200, ease: "bounce"});
 gsap.to(".banner-text h3", {duration: 1, x: 0, ease: "bounce"});
@@ -110,66 +85,84 @@ gsap.from(".service-txt-anim3", {
   duration: 1
 });
 
-//  gsap.from(".pv-txt h4", { 
-//   scrollTrigger:{
-//     trigger: ".pv-txt h4",
-//     pin: true,   // pin the trigger element while active
-//     start: "top 50%", // when the top of the trigger hits the top of the viewport
-//     end: "top center",
-//     toggleActions:"restart none reset none"
-//   }, 
-//   duration: 2.5,
-//   ease: "elastic.out(1, 0.3)",
-//   y:20
-//   });
-
-//  gsap.to(".pv-txt h4", { 
-//   scrollTrigger:{
-//     trigger: ".pv-txt h4",
-//     pin: true,   // pin the trigger element while active
-//     start: "top center", // when the top of the trigger hits the top of the viewport
-//     end: "top center",
-//     toggleActions:"restart none none restart"
-//   },  
-//   duration: 2.5,
-//   ease: "elastic.out(1, 0.3)",
-//   y: 0
-//   });
 
 $(window).scroll(function () {
   $(".navbar").toggleClass("scrolled", $(this).scrollTop() > 50);
 });
+// custom word count
+$.validator.addMethod("wordCount", function(value, element, wordCount) {
+  return value.split(' ').length <= wordCount;
+}, 'Exceeded word count');
+
 
 $(function () {
-  let $register = $(".registerForm");
-  if ($register.length) {
-    $register.validate({
+  let $query = $("#queryForm");
+  
+    $query.validate({
       rules: {
         mail: {
           required: true,
+          email:true
         },
         subject: {
           required: true,
         },
         description: {
           required: true,
+          wordCount:50,
         },
       },
       messages: {
         mail: {
-          required: "looks good ",
+          required: "Email is mandatory ",
+          email:"Plz Enter Email"
         },
         subject: {
-          required: "looks good",
+          required: "Subject is mandatory",
         },
         description: {
-          required: "looks good",
+          required: "Description is mandatory",
+          wordCount:"No More Thna 50 Words",
         },
       },
     });
-  }
+  
 });
 
 
 
- 
+$(function () {
+  let $contact = $("#contactForm");
+  
+    $contact.validate({
+      rules: {
+        email: {
+          required: true,
+          email:true
+        },
+        Fname: {
+          required: true,
+        },
+        message: {
+          required: true,
+          wordCount:50,
+          
+        },
+      },
+      messages: {
+        email: {
+          required: "Email is mandatory ",
+          email:"Plz Enter Email"
+        },
+        Fname: {
+          required: "Subject is mandatory",
+        },
+        message: {
+          required: "Description is mandatory",
+          wordCount:"No More Thna 50 Words",
+        
+        },
+      },
+    });
+  
+});

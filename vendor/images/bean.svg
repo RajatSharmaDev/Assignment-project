@@ -1,0 +1,15 @@
+<svg width="609" height="760" viewBox="0 0 609 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M264.853 684.653C357.541 700.99 453.912 670.852 520.914 601.408C581.409 538.705 589.921 444.072 582.954 354.953C576.726 275.29 539.178 208.069 485.729 151.354C418.802 80.3384 344.017 -24.2412 253.202 5.05312C163.1 34.1174 180.794 172.326 141.264 262.468C102.396 351.1 2.3454 421.518 29.6585 514.818C59.1338 615.508 166.235 667.271 264.853 684.653Z" fill="#FDDADB"/>
+<path d="M225 161.5C225 193.256 199.256 219 167.5 219C135.744 219 110 193.256 110 161.5C110 129.744 135.744 104 167.5 104C199.256 104 225 129.744 225 161.5Z" fill="white" stroke="#FDDADB" stroke-width="2"/>
+<path d="M190.376 141.167H144.626C141.819 141.167 139.543 143.443 139.543 146.25V176.75C139.543 179.557 141.819 181.833 144.626 181.833H190.376C193.183 181.833 195.459 179.557 195.459 176.75V146.25C195.459 143.443 193.183 141.167 190.376 141.167Z" stroke="#FDDADB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M139.543 146.25L164.502 164.398C165.37 165.028 166.415 165.367 167.488 165.367C168.561 165.367 169.607 165.028 170.475 164.398L195.459 146.25" stroke="#FDDADB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M195.458 176.75L180.793 167.422" stroke="#FDDADB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M154.208 167.422L139.543 176.75" stroke="#FDDADB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="609" height="760" fill="white"/>
+</clipPath>
+</defs>
+</svg>

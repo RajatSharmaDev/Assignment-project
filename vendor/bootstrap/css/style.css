@@ -253,6 +253,7 @@ body {
 .custom-font label {
   font-size: 15px;
   font-weight: bold;
+  color: #545dad;
 }
 .footer-margin {
   margin-top: 200px;
@@ -327,6 +328,11 @@ body {
   border-radius: 0.35rem;
   font-weight: bold;
 }
+.btn-custom-primary:hover {
+  background-color: transparent !important;
+  border: 2px solid #d88a8c !important;
+  color: #d88a8c !important;
+}
 .form-control {
   padding: 1.25rem 0.75rem;
   /* border: 2px solid #ced4da; */
@@ -339,6 +345,7 @@ body {
   color: #8a7e7e !important;
   opacity: 1;
 }
+
 .cards-img {
   background-image: url(../../img/form-illus.svg);
   position: absolute;
@@ -356,7 +363,7 @@ body {
 .about-head h1 {
   font-size: 60px;
   font-weight: 600;
-  color: #eea886;
+  color: #ffffff;
   text-align: center;
   margin-top: 70px;
 }
@@ -365,8 +372,7 @@ body {
   padding-left: 27%;
 }
 .service-txt h2 {
-  color: #eea886;
-  font-weight: bold;
+  color: #fddadb;
 }
 .service-txt p {
   color: white;
@@ -391,7 +397,9 @@ body {
   left: 0;
   top: 0;
 }
-.back-card {
+.blog-1,
+.blog-2,
+.blog-3 {
   background-image: url("../../img/blog-1.svg");
   height: 250px;
   background-repeat: no-repeat;
@@ -400,6 +408,12 @@ body {
   width: 90%;
   border-radius: 15px;
   margin-bottom: 20px;
+}
+.blog-2 {
+  background-image: url("../../img/hand-with-cup.jpg");
+}
+.blog-3 {
+  background-image: url("../../img/business-people.jpg");
 }
 
 .about-review {
@@ -464,7 +478,7 @@ body {
 .heght-set h1,
 .blog h1 {
   font-size: 45px;
-  color: #eea886;
+  color: #fddadb;
 }
 .heght-set h4 {
   font-size: 22px;
@@ -472,7 +486,7 @@ body {
 }
 .heght-set h3 {
   font-size: 20px;
-  color: #eea886;
+  color: #fddadb;
 }
 .heght-set p {
   color: #fff;
@@ -569,4 +583,165 @@ body {
 }
 .close {
   font-size: 50px;
+}
+.error {
+  color: red !important;
+}
+/* abhishek-contactus-css */
+.contact-card {
+  position: absolute;
+  top: 10px;
+  display: inline;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5d8d9;
+  width: 400px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.contact-card h2 {
+  padding-top: 20px;
+  color: #545dad;
+  font-weight: bold;
+}
+.bg-img {
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-image: url("../../images/bgimg.svg");
+}
+.sec-1 img {
+  width: 65%;
+  position: relative;
+  bottom: 35%;
+  left: 11%;
+}
+.contact {
+  padding-left: 70px;
+  padding-top: 20px;
+  color: white;
+}
+
+.card-img-top {
+  height: 60px;
+  background-color: #0081d8;
+  color: white;
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.form-control {
+  padding: 1.25rem 0.75rem;
+  border: 2px solid #ced4da;
+  border-radius: 0.35rem;
+  box-shadow: none;
+
+  background-color: #f7f8fa !important;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ced4da !important;
+  opacity: 1; /* Firefox */
+}
+
+.btn-custom-primary {
+  background-color: #f37748 !important;
+  color: #fff !important;
+  border: 2px solid #f37748 !important;
+  padding: 9px 40px;
+  border-radius: 0.35rem;
+}
+.btn-custom-primary:hover {
+}
+.inptext {
+  width: 100%;
+  padding: 5px;
+  color: #f4cb15;
+  background-color: #f7f8fa !important;
+}
+.email {
+  padding-top: 20px;
+}
+.text-message {
+  padding-top: 20px;
+}
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.another-container {
+}
+.lets h1 {
+  padding-left: 70px;
+  font-size: 115px;
+  color: #fddadb;
+  font-weight: bold;
+  margin-top: 35%;
+}
+.lets p {
+  padding-left: 78px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 500;
+}
+.lets h3 {
+  color: rgb(255, 255, 255);
+}
+.img-1 img {
+  padding-top: 10px;
+  margin-left: 68px;
+}
+.img-2 img {
+  padding-top: 10px;
+  margin-left: 68px;
+}
+.text1 {
+  padding-top: 14px;
+  margin-left: 0px !important;
+}
+.bean {
+  background-image: url("../../images/bean.svg");
+  height: 600px;
+  background-size: 100% 600px;
+  margin-top: 35%;
+}
+
+.sel {
+  margin-top: 145px;
+  margin-right: 150px;
+  color: #545dad;
+  font-weight: bold;
+}
+.bn p {
+  text-align: right;
+  margin-right: 150px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+}
+.sel1 {
+  margin-right: 150px;
+  color: #545dad;
+  font-weight: bold;
+}
+.bn1 p {
+  text-align: right;
+  margin-right: 150px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+
+  font-size: 20px;
+}
+.sel2 {
+  margin-right: 160px;
+  color: #545dad;
+  font-weight: bold;
+}
+.bn2 p {
+  text-align: right;
+  margin-right: 160px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
 }
