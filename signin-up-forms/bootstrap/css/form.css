@@ -1,0 +1,386 @@
+.bg-image {
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url("/vendor/bootstrap/img/form-bg.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+}
+
+.bg-size {
+  background-color: bisque;
+}
+.form-inner-img {
+  background-image: url("/vendor/bootstrap/img/form-inner-img.png");
+  background-size: 90% 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+.custom-card-style {
+  margin-top: 60px;
+  margin-left: 46px;
+}
+.icons-div {
+  padding: 10px;
+}
+.icons-div img {
+  padding-left: 15px;
+  margin: 0px;
+  font-size: 10px;
+}
+.customlogin-text {
+  color: #646dbd;
+  font-size: 14px;
+}
+.custom-color {
+  color: #646dbd;
+  font-weight: bold;
+}
+.custom-inp-size {
+  /* width: 388px; */
+  height: 42px;
+
+  /* padding-left: 20px !important;
+  padding-right: 20px !important; */
+  border: 1px solid#646dbd;
+  background-color: #8c94e4;
+}
+
+.custom-inp-size:focus::placeholder {
+  background-color: #b3b9ed !important;
+
+  color: grey;
+}
+.custom-btn-css {
+  width: 130px;
+  height: 40px;
+  margin: 20px;
+  background-color: #8c94e4;
+  border: none;
+}
+
+.form-control::placeholder {
+  color: lightgray;
+}
+
+.custom-btn-css:hover {
+  color: white;
+  background-color: #646dbd;
+}
+.error {
+  color: red;
+  float: right;
+}
+.bg-image1 {
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url("/vendor/bootstrap/img/form-bg.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+}
+
+.form-teacherinner-img {
+  background-image: url("/vendor/bootstrap/img/form-teacherinner-img.png");
+  background-size: 90% 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+.bg-image2 {
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url("/vendor/bootstrap/img/form-bg1.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+}
+
+.student-signupimg {
+  background-image: url("/vendor/bootstrap/img/formbgimgsignup.png");
+
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.student-form-mt {
+  margin-top: 90px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 9%;
+  color: #dd9d9e;
+}
+.icons-stdsignup-div {
+  padding-left: 9%;
+  margin: 10px;
+}
+.icons-stdsignup-div img {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.customstudentsignup-text {
+  color: #dd9d9e;
+
+  margin-left: 9%;
+}
+.custom-ssignupcolor {
+  color: #dd9d9e;
+}
+.main-content {
+  margin-top: 160px;
+}
+.custom-form-css {
+  margin-left: 20%;
+}
+.custom-form-css input {
+  width: 400px;
+  float: unset;
+}
+.custom-inp-size2 {
+  /* width: 388px; */
+
+  /* padding-left: 20px !important;
+  padding-right: 20px !important; */
+  border: 1px solid#DD9D9E;
+  background-color: #deb2b2;
+}
+.custom-inp-size2:focus {
+  background-color: #d7aeaf;
+}
+.custom-inp-size2::placeholder {
+  background-color: #d7aeaf !important;
+}
+
+.custom-inp-size2:focus::placeholder {
+  background-color: #d7aeaf;
+
+  color: #f8dcdc;
+}
+.custom-btn-css2 {
+  background-color: #dd9d9e;
+  border: none;
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+
+  color: white;
+  font-weight: bold;
+}
+.custom-btn-css2:hover {
+  background-color: #d7aeaf;
+  color: white;
+}
+.custom-btn-css2:active {
+  background-color: #d7aeaf !important;
+}
+.custm-right-font {
+  margin-top: 400px;
+  margin-left: 40px;
+  color: #d7aeaf;
+}
+.btn-border {
+  border: 1px solid #dd9d9e;
+  margin-right: 80px;
+}
+.side-img h4 {
+  position: relative;
+  right: 20%;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+.side-img a {
+  position: relative;
+  right: 25%;
+  color: white;
+  font-weight: bold;
+}
+.side-img :hover {
+  color: white;
+}
+/* teacher signup */
+.bg-image-teacher {
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url("/vendor/bootstrap/img/form-bg1.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+}
+.teacher-signupimg {
+  background-image: url("/signin-up-forms/bootstrap/img/teacher-back.png");
+
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  background-position-x: center;
+  background-position-y: center;
+}
+.teacher-form-mt {
+  margin-top: 90px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 9%;
+  color: #dd9d9e;
+}
+.teacher-text {
+  color: #dd9d9e;
+  margin-left: 9%;
+}
+.teacher-signupcolor {
+  color: #dd9d9e;
+}
+.teacher-inp-size2 {
+  border: 1px solid #dd9d9e;
+  background-color: #bfc2e0;
+  color: #7075a1;
+}
+.custom-btn-css4 {
+  background-color: #dd9d9e;
+  border: none;
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: -30px;
+  color: white;
+  font-weight: bold;
+}
+.custom-btn-css4:hover {
+  background-color: #bfc2e0;
+  color: white;
+}
+.custom-btn-css4:active {
+  background-color: #bfc2e0 !important;
+}
+
+.err-set {
+  margin-right: 15%;
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .err-set {
+    margin-right: 0%;
+    float: none;
+  }
+  .custom-card-style {
+    width: 100% !important;
+    margin-left: 0;
+  }
+  .form-inner-img {
+    background-image: none;
+    margin-left: 0px;
+  }
+  .custom-btn-css {
+    width: 100px;
+  }
+  .bg-image2 {
+    overflow: visible;
+    height: auto;
+  }
+  .student-form-mt {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: #f0b4b5;
+  }
+  .icons-stdsignup-div {
+    padding-left: 0px;
+  }
+  .student-signupimg {
+    background-size: auto auto;
+  }
+  .main-content {
+    margin-top: 0rem !important;
+  }
+  .customstudentsignup-text {
+    margin-left: 0px;
+  }
+  .custom-form-css {
+    margin-left: 20px;
+  }
+  .custom-form-css input {
+    width: 100%;
+  }
+  .form-row > .col,
+  .form-row > [class*="col-"] {
+    margin-left: 0px !important;
+  }
+  .mob-side-img {
+    background-image: url("/signin-up-forms/bootstrap/img/mob-signin.svg");
+    padding: 40px 0px 40px 0px;
+  }
+  .mobile-student-signup {
+    background-image: url("/signin-up-forms/bootstrap/img/mobile-signup.png");
+    margin-top: 90px;
+    height: auto;
+  }
+  .mobile-teacher-signup {
+    background-image: url("/signin-up-forms/bootstrap/img/mobile-signup.png");
+    margin-top: 90px;
+    height: auto;
+  }
+  .teacher-signupimg {
+    background-size: auto auto;
+  }
+  .mobile-form-ml {
+    padding-left: 0px !important;
+  }
+  .form-teacherinner-img {
+    background-image: none;
+    margin-left: 0;
+  }
+  .teacher-form-mt {
+    margin-top: 0px;
+    color: #f0b4b5;
+    margin-left: 0px;
+  }
+  .teacher-text {
+    margin-left: 0px;
+  }
+  .side-img h4 {
+    right: 0%;
+
+    text-align: center;
+  }
+  .custm-right-font {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .bg-image-teacher {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  .side-img a {
+    right: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0px 10px 0px;
+    margin-left: 0px !important;
+  }
+  .side-img-padding {
+    padding: 10px 0px 10px 0px;
+  }
+  .form-card-padding {
+    padding: 10px 15px 0px 15px;
+  }
+  .form-btn-padding {
+    padding: 20px;
+  }
+  .form-img-padding {
+    padding-bottom: 20px;
+  }
+}

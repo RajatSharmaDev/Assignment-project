@@ -1,6 +1,5 @@
 body {
   font-family: "Montserrat", sans-serif;
-  text-align: justify;
 }
 .scrolled {
   background: #545dad;
@@ -23,7 +22,6 @@ body {
   font-weight: bold;
   font-size: 50px;
   position: relative;
-
   left: 12%;
 }
 .upload-font {
@@ -65,7 +63,7 @@ body {
   border-bottom-left-radius: 200px;
 }
 .nav-space a {
-  padding: 5px 20px 5px 20px !important;
+  padding: 5px 18px 5px 18px !important;
   color: #545dad;
   font-weight: 600;
 }
@@ -373,6 +371,7 @@ body {
 }
 .service-txt h2 {
   color: #fddadb;
+  line-height: 1.5;
 }
 .service-txt p {
   color: white;
@@ -536,6 +535,7 @@ body {
 }
 .error {
   color: red;
+  float: right;
 }
 
 /* modal */
@@ -586,6 +586,7 @@ body {
 }
 .error {
   color: red !important;
+  float: right;
 }
 /* abhishek-contactus-css */
 .contact-card {
@@ -677,7 +678,6 @@ textarea {
   font-size: 115px;
   color: #fddadb;
   font-weight: bold;
-  margin-top: 35%;
 }
 .lets p {
   padding-left: 78px;
@@ -704,7 +704,12 @@ textarea {
   background-image: url("../../images/bean.svg");
   height: 600px;
   background-size: 100% 600px;
-  margin-top: 35%;
+  margin-top: 45%;
+}
+.talkimg {
+  position: relative;
+  top: 230px;
+  height: 450px;
 }
 
 .sel {
@@ -744,4 +749,403 @@ textarea {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
+}
+#errNm1 {
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-brand > h1:nth-child(1) {
+    color: white;
+  }
+  .mobile-nav {
+    background-color: #545dad;
+    height: 370px;
+    position: relative;
+    bottom: 74px;
+  }
+  .navbar-toggler {
+    z-index: 9;
+    padding-right: 45px;
+  }
+  .navbar {
+    padding: 0rem 0rem;
+  }
+  .nav-space a {
+    padding: 16px 20px 12px 20px !important;
+    color: #ffffff;
+  }
+  .about-vector {
+    background-size: 100% 243px;
+    background-repeat: no-repeat;
+  }
+  .about-vector img {
+    display: none;
+  }
+  .about-head h1 {
+    font-size: 30px;
+
+    margin-top: 20px;
+  }
+  .about-vector {
+    height: 290px;
+  }
+  .abut-img {
+    height: 500px;
+  }
+  .about-review {
+    padding: 10px 8px 0px 25px;
+  }
+  .about-review.ab1 {
+    width: 300px;
+  }
+  .about-review .ab-txt h4 {
+    font-size: 17px;
+  }
+  .about-review .ab-txt p {
+    font-size: 14px;
+  }
+  .pos-card-1 {
+    left: 50%;
+  }
+  .heght-set {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .heght-set p {
+    padding-right: 0px;
+  }
+  .heght-set h1,
+  .blog h1 {
+    font-size: 40px;
+  }
+
+  .heght-set h4 {
+    font-size: 18px;
+  }
+  .heght-set h3 {
+    font-size: 18px;
+  }
+  .heght-set p {
+    font-size: 16px;
+  }
+  .custom-mt {
+    margin-top: 50px;
+  }
+  .blog h1 {
+    text-align: center;
+  }
+  .blog {
+    text-align: center;
+  }
+  .blog-1 {
+    width: 100%;
+  }
+  .blog-2 {
+    width: 100%;
+  }
+  .blog-3 {
+    width: 100%;
+  }
+  .blog-btn {
+    margin-bottom: 50px;
+  }
+  .footer-card {
+    height: auto;
+
+    border-top-right-radius: 0px;
+  }
+  .footer-margin {
+    margin-top: 0;
+  }
+  .social-img img {
+    float: none;
+  }
+  .mob-servics img {
+    height: 200px;
+  }
+  .mob-servics h2 {
+    font-size: 25px;
+  }
+  .serv-padding {
+    padding: 1rem !important;
+    text-align: center;
+  }
+  .hr-service::after {
+    display: none;
+  }
+  .bean {
+    background-size: 90% 600px;
+    margin-top: 620px;
+    background-repeat: no-repeat;
+  }
+  .sel {
+    margin-right: 150px;
+
+    font-size: 20px;
+  }
+  .bn p {
+    margin-right: 48px;
+
+    font-size: 16px;
+  }
+  .sel1 {
+    margin-right: 136px;
+
+    font-size: 20px;
+  }
+  .bn1 p {
+    margin-right: 48px;
+
+    font-size: 16px;
+  }
+  .sel2 {
+    margin-right: 145px;
+
+    font-size: 20px;
+  }
+  .bn2 p {
+    margin-right: 60px;
+
+    font-size: 16px;
+  }
+  .talkimg {
+    top: 670px;
+    height: 270px;
+  }
+  .bg-img {
+    background-size: 100% auto;
+    height: 25vh;
+  }
+  .sec-1 img {
+    display: none;
+  }
+  .contact {
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .lets {
+    text-align: center;
+  }
+  .lets h1 {
+    padding-left: 0px;
+    font-size: 50px;
+  }
+  .lets p {
+    padding-left: 0px;
+  }
+  .img-1 img {
+    margin-left: 0px;
+    height: 50px;
+  }
+  .img-2 img {
+    margin-left: 0px;
+    height: 50px;
+  }
+  .lets h3 {
+    font-size: 22px;
+  }
+  .contact-card {
+    top: 300px;
+  }
+  .contact-card {
+    left: 0;
+    transform: none;
+    z-index: 3;
+    width: auto;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 10px;
+  }
+  .registerForm {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .custom-font h5 {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .custom-font p {
+    font-size: 13px;
+    margin-left: 15px;
+  }
+  .security-set .accuracy {
+    height: 50px;
+    width: 50px;
+  }
+  .security-set .payment {
+    height: 50px;
+    width: 50px;
+  }
+  .security-set .integrity {
+    height: 50px;
+    width: 50px;
+  }
+  .security-set {
+    padding: 1rem !important;
+  }
+  .security-img img {
+    width: 80%;
+  }
+
+  .security-img {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .banner-bottom {
+    padding: 220px 0px 0px 0px;
+  }
+  .content h4 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+
+    transform: translate(-50%, -530%);
+  }
+  .why-student h5 {
+    font-size: 17px;
+  }
+  .mob-imeg {
+    padding: 10px;
+  }
+  .mobile-imeg {
+    margin-top: 80px;
+  }
+  .mob-imeg img {
+    height: 25px;
+    width: 25px;
+    margin-top: 20px;
+  }
+  .why-us img {
+    position: relative;
+    max-width: 270px !important;
+    width: 270px !important;
+    max-height: 260.85px !important;
+    height: 260.85px !important;
+  }
+  .why-studnt h1 {
+    font-size: 25px;
+  }
+  .why-studnt p {
+    font-size: 12px;
+  }
+  .banner-text {
+    top: 90px;
+    width: max-content;
+  }
+  .banner-text h3 {
+    font-size: 25px;
+    left: 5%;
+    text-align: center;
+  }
+  .banner-text p {
+    display: block;
+    left: 5%;
+    font-size: 10px;
+    text-align: center;
+  }
+  #hero {
+    height: 150vh;
+
+    background-position-x: inherit;
+
+    background-size: 100% auto;
+    border-bottom-left-radius: 0px;
+  }
+  .form-card {
+    top: 320px;
+
+    left: 0%;
+
+    width: 340px;
+    border-radius: 20px;
+  }
+  .form-card h2 {
+    font-size: 25px;
+  }
+  .mobile-form {
+    padding: 1rem 2rem 2rem 2rem !important;
+  }
+  .review-img {
+    display: none;
+  }
+  .profile-review.pv1 {
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 64px;
+  }
+  .profile-review {
+    padding: 10px 10px 2px 20px;
+  }
+  .profile-review .pv-txt h4 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+  }
+  .profile-review .pv-txt p {
+    font-size: 12px;
+  }
+  .review-img-1 img {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    height: 80px;
+  }
+  .review {
+    text-align: center;
+  }
+  .review h1 {
+    top: 150px;
+    left: 0;
+    font-size: 25px;
+  }
+  .review-mob-mr {
+    margin-top: 180px;
+  }
+  .review-img-2 {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+  }
+  .review-img-2 img {
+    height: 80px;
+  }
+  .review-img-5 {
+    top: 70%;
+
+    bottom: 30%;
+    left: 75%;
+  }
+  .review-img-5 img {
+    height: 80px;
+  }
+  .review-img-3 {
+    right: 0%;
+    transform: translateX(0%);
+    top: 70%;
+  }
+  .review-img-3 img {
+    height: 80px;
+  }
+  .review-img-6 {
+    display: none;
+  }
+  .review-img-4 {
+    display: none;
+  }
+  #review-banner {
+    height: 140vh;
+    width: 100%;
+  }
+  .mob-mb-set {
+    margin-bottom: 0px !important;
+  }
+  .list-group-item {
+    padding: 0.55rem 0.25rem;
+  }
+  .list-group {
+    margin-top: 2rem !important;
+  }
 }

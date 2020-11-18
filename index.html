@@ -20,6 +20,8 @@
     />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="vendor/bootstrap/css/style.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
   </head>
 
@@ -27,7 +29,7 @@
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand navbar-logo" href="index.html"><h1>LOGO</h1></a>
         <button
           class="navbar-toggler"
@@ -38,9 +40,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="fas fa-bars"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse mobile-nav" id="navbarResponsive">
           <ul class="navbar-nav ml-auto nav-space">
             <li class="nav-item active">
               <a class="nav-link" href="index.html"
@@ -60,11 +62,14 @@
             <li class="nav-item">
               <a class="nav-link" href="contactus.html">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signin-up-forms/teacherlogin.html">Member</a>
+            </li>
             <li class="nav-item custom-pos">
-           
-              <button type="button" class="  btn  custom-btn shadow text-white" data-toggle="modal" data-target="#myModal2">
-                Sign in
-              </button>
+           <a href="signin-up-forms/studentlogin.html"><button type="button" class="  btn  custom-btn shadow text-white" data-toggle="modal" data-target="#myModal2">
+            Sign in
+          </button></a>
+              
             </li>
           
           </ul>
@@ -90,24 +95,25 @@
           <div class="col-6">
             
              <div class="card form-card shadow  ">
-    
+              
                <div class="mt-2 mb-4 text-center "><h2>Submit Query</h2></div>
-                <form class="px-5 pb-5" id="queryForm" >
+                <form class="px-5 pb-5 mobile-form" id="queryForm" >
+                  
                 <div class="form-row custom-font">
                   <div class="col-md-12 mb-3 p-0">
-                    <label for="validationCustom01 ">Email</label>
-                    <input type="email" class="form-control" id="email" name="mail" placeholder="Enter Email" value="" >
+                    <label for="validationCustom01 ">Email</label> &nbsp;<span id="errsub1"></span>
+                    <input type="email" class="form-control" id="email" name="mail" placeholder="Enter Email" value="" data-error="#errsub1">
                   </div>
                   <div class="col-md-8 mb-3 p-0 ">
-                    <label for="validationCustom01 ">Subject</label>
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" value="" >
+                    <label for="validationCustom01 ">Subject</label><span id="errsub2"></span>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" value="" data-error="#errsub2">
                    
                   </div>
                   <div class="col-md-4 mb-3  text-center">
-                    <label for="validationCustom01 " class="upload-font">Upload File</label>
+                    <label for="validationCustom01 " class="upload-font">Upload File</label>&nbsp;<span id="errsub3"></span>
                     <div class="custom-file mb-3">
                      
-                      <input type="file" class="custom-file-input" id="validatedCustomFile" >
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" data-error="#errsub3">
                       <label class="custom-file-label" for="validatedCustomFile"><img src="vendor/img/upload-cloud.svg" alt="" height="40px"></label>
                       
                     </div>
@@ -115,22 +121,12 @@
                    
                   </div>
                   <div class="col-md-12 mb-3 p-0">
-                    <label for="validationCustom01 ">Description</label>
-                    <textarea class="form-control" id="description" name="description" rows="3" placeholder="Enter Description" ></textarea>
+                    <label for="validationCustom01 ">Description</label>&nbsp;<span id="errsub4"></span>
+                    <textarea class="form-control" id="description" name="description" rows="3" placeholder="Enter Description" data-error="#errsub4"></textarea>
                   
                 
                   
-<!--              
-                <div class="form-group d-none invisible">
-                  <div class="form-check" id="invalidCheck">
-                    
-                    
-                  <input class="form-check-input " type="checkbox" value=""  
-                  >
-                  
-                    
-                  </div>
-                </div> -->
+
                 </div>
                 <button class="btn btn-custom-primary" type="submit">Submit</button>
               </form>
@@ -141,7 +137,7 @@
       </div>
     </section>
     <!-- Why Us Section start -->
-    <section class="custom-mt custom-mb">
+    <section class="custom-mt custom-mb mob-mb-set">
       <div class="container">
         <div class="row text-center text-white mt-5 mb-5">
           <div class="col-sm-12  why-studnt">
@@ -156,9 +152,9 @@
           </div>
         </div>
 
-        <div class="row mt-5 why-student custom-mb">
+        <div class="row mt-5 why-student custom-mb mob-mb-set">
           <div class="col-sm-4">
-            <div class="row text-white">
+            <div class="row text-white mob-imeg">
               <div class="col-sm-2 col-2">
                 <img src="vendor/img/search.png" width="30px" height="30px" />
               </div>
@@ -191,12 +187,12 @@
             </div>
           </div>
           <div class="col-sm-4 text-center">
-            <div class="why-us">
-              <img src="vendor/img/student-1.svg" />
+            <div class="why-us" id="whyus">
+              <img src="vendor/img/student-1.svg" class="why-img"/>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="row text-white">
+            <div class="row text-white mob-imeg mobile-imeg">
               <div class="col-sm-2 col-2">
                 <img src="vendor/img/chat.png" width="30px" height="30px" />
               </div>
@@ -240,7 +236,7 @@
     <!-- Why Us Section End-->
     <!-- testimonial Start-->
     <section id="review-banner" class="mt-5">
-      <div class="row custom-mt">
+      <div class="row custom-mt no-gutters">
         <div class="col-sm-6">
           <div class="review"><h1>What Students Says</h1></div>
         </div>
@@ -253,7 +249,7 @@
       <div class="container-fluid custom-mt custom-mb">
         <div class="row">
           <div class="col-sm-6 p-0">
-            <div>
+            <div class="review-mob-mr">
               <div class="profile-review pv1">
                 <div class="pv-txt">
                   <h4>Beat the Study Blues.</h4>
@@ -390,13 +386,13 @@
                 <li class="list-group-item">Credit Card</li>
               </ul>
             </div>
-            <div class="col-sm-4">   
-              <ul class="list-group border mt-5">
-                <li class="list-group-item"><h3>Pages </h3> </li>
-                <li class="list-group-item">Teatimonial</li>
-                <li class="list-group-item">Services </li>
-                <li class="list-group-item">Contact Us</li>
-                <li class="list-group-item">Blog</li>
+            <div class="col-sm-4">
+              <ul class="list-group border mt-5 ">
+                <li class="list-group-item"><h3>Pages</h3></li>
+                <li class="list-group-item "><a href="" class="text-dark">Testimonial</a></li>
+                <li class="list-group-item"><a href="" class="text-dark">Services</a></li>
+                <li class="list-group-item"><a href="" class="text-dark">Contact Us</a></li>
+                <li class="list-group-item"><a href="" class="text-dark">Blog</a></li>
               </ul>
             </div>
             <div class="col-sm-4">   
@@ -419,23 +415,9 @@
         </div>
       </section>
     </footer>
-    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
   
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-           
-          </div>
   
-          <div class="modal-body">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </p>
-          </div>
-  
-        </div><!-- modal-content -->
-      </div><!-- modal-dialog -->
-    </div>
+       
     <!-- testimonial End-->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
@@ -463,6 +445,8 @@
     
 
     <script src="vendor/bootstrap/js/main.js"></script>
+    <script src="vendor/bootstrap/js/gsap.js"></script>
+
     
 
   </body>
